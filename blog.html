@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <div class="w-full md:w-full lg:w-9/12 lg:mx-auto mt-52 px-5">
+
+            <div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        Discuss the scope of var, let, and const
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-lg font-inter font-normal">
+                            1. Var keyword declares a variable which is scoped to its current execution context, optionally initializing to a value. <br><br>
+                            2. Let keyword declares a block scoped variable, optionally initializing it to a value. <br><br>
+                            3. Const keyword declares constants which are block scoped much like variables defined using let but the value of a constant cannot change. The const declaration creates a read-only reference to a value.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        Tell us the use cases of null and undefined
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-lg font-inter font-normal">One aspect of JavaScript development that many developers struggle with is dealing with optional values. What are the best strategies to minimize errors caused by values that could be null, undefined, or otherwise uninitialized at runtime? <br> <br>
+                            Some languages have built-in affordances for those circumstances. In some statically typed languages, you can say that null and undefined are illegal values, and let your programming language throw a TypeError at compile time, but even in those languages, that can't prevent null inputs from flowing into the program at runtime. <br><br>
+
+                            To get a better handle on this problem, we need to understand where these values can come from. Here are some of the most common sources:
+                            <li>User input</li>
+                            <li>Database/network records</li>
+                            <li>Uninitialized state</li>
+                            <li>Functions which could return nothing</li>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-base-200">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium">
+                        What do you mean by REST API?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-lg font-inter font-normal">1. RESTful <br>
+                            2. API <br><br>
+                            An API is an interface through which one program or web site talks to another.
+                            They are used to share data and services, and they come in many different
+                            formats and types. <br><br>
+                            
+                            A RESTful API is one of the many possible ways that programs, servers, 
+                            and web sites can share data and services. REST (Representational State Transfer
+                            ) describes the general rules for how the data and services are represented 
+                            through the API so that other programs will be able to correctly request and 
+                            receive the data and services that an API makes available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-8">
+                <button onclick="handleHomeButton()" class="btn bg-rose-500 hover:bg-red-400 text-lg capitalize text-white">Home Page</button>
+            </div>
+
+        </div>
+    </header>
+
+    <script src="js/style.js"></script>
+</body>
+
+</html>
