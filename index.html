@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Lato:wght@400;700;900&family=Manrope:wght@400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+<!-- style  -->
     <style>
         
         .font-inter {
@@ -22,32 +23,33 @@
 
     </style>
 </head>
-
+<!-- body  -->
 <body class="container mx-auto px-5 lg:px-5">
+    <!-- header  -->
     <header class="mt-12">
         <section>
+            <!-- nav  -->
             <nav>
-
                 <div class="flex gap-6 justify-between items-center flex-col md:flex-row lg:flex-row">
                     <div>
                         <img src="img/Logo.png" alt="">
                     </div>
                     <div>
-                        <button id="short-button" class="btn capitalize bg-[#d3d3d3] font-inter text-[#252525] text-lg font-medium py-[10px] px-5">Sort by view</button>
+                        <button id="shortNow" onclick="SortData()" class="btn capitalize bg-[#d3d3d3] font-inter text-[#252525] text-lg font-medium py-[10px] px-5">Sort by view</button>
                     </div>
                     <div>
                         <button onclick="handleClickBlog()" class="btn capitalize font-inter bg-[#ff1f3d] hover:bg-rose-400 text-lg text-white font-medium py-[10px] px-5">Blog</button>
                     </div>
                 </div>
-
             </nav>
             <hr class="text-[#c9c9c9] my-8">
         </section>
     </header>
+    <!-- main  -->
     <main>
         <article>
             <section>
-                <div id="button-container" class="flex justify-center items-center gap-6 flex-col md:flex-row lg:flex-row">
+                <div id="button-container" class="flex justify-center items-center gap-2 md:gap-5 lg:gap-6 flex-row">
                    
                 </div>
             </section>
@@ -60,10 +62,8 @@
         </article>
     </main>
 
-
+<!-- script  -->
     <script src="js/style.js"></script>
 </body>
 
 </html>
-
-
